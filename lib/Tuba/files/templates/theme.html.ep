@@ -1,0 +1,7 @@
+% if ( (my $t = param('theme')) && param('theme') =~ /^[a-z]+$/) {
+% session 'theme' => $t;
+% }
+% if (my $t = session 'theme') {
+%= stylesheet "//bootswatch.com/$t/bootstrap.min.css";
+% }
+
